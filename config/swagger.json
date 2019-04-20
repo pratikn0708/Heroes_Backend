@@ -1,0 +1,230 @@
+{
+    "apiVersion": "1.0.0",
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Heroes Documentation",
+        "description": "An API documentation for myCar api developed in node and documented in the swagger-2.0 specification",
+        "license": {
+            "name": "MIT Liscense",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "localhost:3000",
+    "tags": [{
+        "name": "Heroes",
+        "description": "API's for Heroes"
+    }],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/display": {
+            "get": {
+                "tags": [
+                    "Heroes"
+                ],
+                "summary": "Heroes List",
+                "description": "Hero will be display",
+                "consumes": "application/json",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success!",
+                        "examples": {
+                            "application/json": {
+                                "data": [{
+                                    "_id": "5ca8241823c1e00788458ebd",
+                                    "superHero": "abc",
+                                    "heroHeight": "6",
+                                    "heroGender": "male",
+                                    "canFly": "yes",
+                                    "fanFollowing": "1234",
+                                    "superpowers": "fly,swim",
+                                    "fightsWon": "11"
+                                }],
+                                "status": 200
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Failed!",
+                        "examples": {
+                            "application/json": {
+                                "message": "Couldn't get data",
+                                "data": [],
+                                "status": 400
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/insert": {
+            "post": {
+                "tags": [
+                    "heroes"
+                ],
+                "summary": "Adds new Hero",
+                "description": "Hero will be added",
+                "consumes": "application/json",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "name": "Vendor Data",
+                    "description": "Given vendor data will be saved",
+                    "in": "body",
+                    "required": true,
+                    "schema": {
+                        "type": "object",
+                        "$ref": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Success!",
+                        "examples": {
+                            "application/json": {
+                                "message": "Data is saved",
+                                "data": [{
+                                    "superHero": "america captain11",
+                                    "heroHeight": "12",
+                                    "heroGender": "male",
+                                    "canFly": "yes",
+                                    "fanFollowing": "1234",
+                                    "superpowers": "fly,swim",
+                                    "fightsWon": "123"
+                                }],
+                                "status": 200
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Failed!",
+                        "examples": {
+                            "application/json": {
+                                "message": "Couldn't save data",
+                                "data": [],
+                                "status": 400
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/delete/{id}": {
+            "delete": {
+                "tags": [
+                    "Hero"
+                ],
+                "summary": "Delete Hero",
+                "description": "Delete a particular hero by id",
+                "consumes": "application/json",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "description": "ID of hero to delete",
+                    "required": true
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Success!",
+                        "examples": {
+                            "application/json": {
+                                "message": "hero deleted",
+                                "data": [],
+                                "status": 200
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Failed!",
+                        "examples": {
+                            "application/json": {
+                                "message": "no record",
+                                "data": [],
+                                "status": 500
+                            }
+                        }
+                    }
+                }
+            }
+
+        },
+        "/update/{id}": {
+            "put": {
+                "tags": ["Heroes"],
+                "summary": "updating the features of the particular hero",
+                "description": "Updating the features of that particular hero",
+                "consumes": "application/json",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "description": "hero details should be given",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": ""
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of car to update",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success!",
+                        "examples": {
+                            "application/json": {
+                                "message": "Hero Saved",
+                                "data": [{
+                                    "_id" : "5ca8241823c1e00788458ebd",
+                                    "superHero" : "america captain",
+                                    "heroHeight" : "12",
+                                    "heroGender" : "male",
+                                    "canFly" : "yes",
+                                    "fanFollowing" : "1234",
+                                    "superpowers" : "fly,swim",
+                                    "fightsWon" : "123"
+                                }],
+                                "status": 200
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Failed!",
+                        "examples": {
+                            "application/json": {
+                                "message": "Couldn't Update Car",
+                                "data": [],
+                                "status": 400
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}

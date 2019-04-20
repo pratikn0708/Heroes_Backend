@@ -1,0 +1,112 @@
+{
+    "superheros":[
+    {
+    "superHero": "Captain America",
+    "heroHeight":6.4,
+    "heroGender":true,
+    "canFly":false,
+    "fanFollowing":100000,
+    "superpowers":["Leader","Immortal","Sheild","Fighter","Swim"],
+    "fightsWon":50
+    },
+    {
+    "superHero": "Iron Man",
+    "heroHeight":5.10,
+    "heroGender":true,
+    "canFly":true,
+    "fanFollowing":200000,
+    "superpowers":["Arc-reactor","Suit","Scientist","Fly"],
+    "fightsWon":32
+    },
+    {
+    "superHero": "Batman",
+    "heroHeight":5.12,
+    "heroGender":true,
+    "canFly":false,
+    "fanFollowing":79000,
+    "superpowers":["NightVision","Bat"],
+    "fightsWon":13
+    },
+    {
+    "superHero": "Superman",
+    "heroHeight":6.6,
+    "heroGender":true,
+    "canFly":true,
+    "fanFollowing":1000000,
+    "superpowers":["Leader","Immortal","God","Fighter","Swim","Fly"],
+    "fightsWon":80
+    },
+    {
+    "superHero": "Wonder Woman",
+    "heroHeight":6.4,
+    "heroGender":false,
+    "canFly":false,
+    "fanFollowing":9000,
+    "superpowers":["Demi-god"],
+    "fightsWon":5
+    },
+    {
+    "superHero": "Captain Marvel",
+    "heroHeight":5.8,
+    "heroGender":false,
+    "canFly":true,
+    "fanFollowing":60000,
+    "superpowers":["Almighty","Immortal","Pilot","Fighter"],
+    "fightsWon":50
+    },
+    {
+    "superHero": "Doctor Strange",
+    "heroHeight":6.2,
+    "heroGender":true,
+    "canFly":true,
+    "fanFollowing":89000,
+    "superpowers":["Doctor","Magic","Clever","Fly","Swim"],
+    "fightsWon":25
+    },
+    {
+    "superHero": "Thor",
+    "heroHeight":6.5,
+    "heroGender":true,
+    "canFly":true,
+    "fanFollowing":95000,
+    "superpowers":["King","Immortal","God","Hammer","Lightning"],
+    "fightsWon":45
+    },
+    {
+    "superHero": "Hulk",
+    "heroHeight":5.9,
+    "heroGender":true,
+    "canFly":false,
+    "fanFollowing":9000,
+    "superpowers":["Scientist","Giant","Angry"],
+    "fightsWon":12
+    },
+    {
+    "superHero": "Black Panther",
+    "heroHeight":6.1,
+    "heroGender":true,
+    "canFly":false,
+    "fanFollowing":80000,
+    "superpowers":["King","Suit"],
+    "fightsWon":4
+    },
+    {
+    "superHero": "Ant Man",
+    "heroHeight":5.11,
+    "heroGender":true,
+    "canFly":false,
+    "fanFollowing":20000,
+    "superpowers":["Shrink","BlewUp","Clever","AntMan-suit"],
+    "fightsWon":10
+    },
+    {
+    "superHero": "AquaMan",
+    "heroHeight":6.2,
+    "heroGender":true,
+    "canFly":false,
+    "fanFollowing":7000,
+    "superpowers":["King","Swim","Amphibian","Fighter"],
+    "fightsWon":5
+    }
+    ]
+    }
